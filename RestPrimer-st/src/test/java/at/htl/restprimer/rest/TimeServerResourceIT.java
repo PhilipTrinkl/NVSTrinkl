@@ -19,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class TimeServerResourceIT {
     private Client client;
     private WebTarget tut;
-    @BeforeAll
+    @BeforeEach
     public void initClient() {
         this.client = ClientBuilder.newClient();
         this.tut = this.client.target("http://localhost:8080/restprimer/api/time");
